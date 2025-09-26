@@ -1,56 +1,90 @@
 ---
 layout: page
-title: Project Vulcan 24-25, Airbrakes Controls
-description:  Closed-loop airbrake control with Kalman-based state estimation, HIL/SIL validation, and flight testing.
-img: assets/img/MASA/AB_Vulcan_photo.png
+title: Project Vulcan, Airbrakes Controls
+description: with background image
+img: assets/img/MASA/AB_Vulvan_photo.png
 importance: 1
 category: work
 related_publications: true
-tags: [controls, avionics, HIL, MASA, STM32, Kalman]
 ---
 
-## Overview
+Every project has a beautiful feature showcase page.  
+It's easy to include images in a flexible 3-column grid format.  
+Make your photos 1/3, 2/3, or full width.
 
-The **airbrake control system** regulates aerodynamic braking to ensure the Vulcan rocket reaches its target apogee. Our research explored advanced methods such as **PID** and **adaptive control**, but given time and experience constraints, we implemented a simplified **threshold-based deployment strategy**. This mechanism activates the airbrakes when the error signal—defined as the difference between modeled and measured drag—exceeds a predefined threshold.
-
-Fail-safes are incorporated to guarantee reliability:
-- **Timed activation** within a defined flight window.  
-- **Sensor cross-validation** to reduce false triggers.  
-- **Real-time health checks** for actuator/sensor integrity.  
+To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
 ---
-
-## Design Analysis
-
-In aerospace applications, a control system is best understood as the integration of three interdependent functions:
-
-- **Navigation** — estimating the vehicle’s state (position, velocity, acceleration, orientation) using onboard sensors.  
-- **Guidance** — generating target instructions, such as desired apogee altitude.  
-- **Control** — executing guidance commands via actuators (airbrake servos in our case).  
-
-For Vulcan, analysis focuses on the **midcourse (coasting) phase**—the period between motor burnout and apogee. During this phase:
-
-- Thrust is zero, so both mass and inertia are constant.  
-- The rocket behaves as a rigid body under translational and rotational motion.  
-- Dominant forces are:
-  - Gravitational force (\(F_g\))  
-  - Aerodynamic drag force (\(F_A(u)\)), modulated by airbrake openness \(u\)  
-  - Disturbance forces (\(F_N\)) such as wind or turbulence  
-
+layout: page
+title: project
+description: a project with a background image
+img: /assets/img/12.jpg
 ---
-## System Overview
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3">
-    {% include figure.liquid path="assets/img/MASA/AB_Vulcan_SoftwareBlock.png" title="Software overview" class="img-fluid rounded z-depth-1" %}
+
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
   </div>
-
-
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
-<div class="caption">Sensor → Estimator (Kalman) → Controller → Airbrake Actuator.</div>
 
-**Stack & Hardware**
-- **MCU:** STM32
-- **Buses:** I2C for IMU/Baro, UART for telemetry, CAN for inter-board
-- **Tooling:** PlatformIO, MATLAB/Simulink, Python, Post-processing in Jupyter
+<div class="caption">
+  Caption photos easily. On the left, a road goes through a tunnel.  
+  Middle, leaves artistically fall in a hipster photoshoot.  
+  Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
 
----
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+<div class="caption">
+  This image can also have a caption. It's like magic.
+</div>
+
+You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.  
+Say you wanted to write a bit about your project before you posted the rest of the images.  
+You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+<div class="caption">
+  You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
+
+The code is simple. Just wrap your images with <div class="col-sm"> and place them inside <div class="row"> (read more about the Bootstrap Grid system).  
+
+To make images responsive, add img-fluid class to each; for rounded corners and shadows use rounded and z-depth-1 classes.  
+
+Here's the code for the last row of images above:
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+I have videos, and photos, some diagrams. This general structure allows you to mix:
+- Text sections for context,
+- Image grids for diagrams/photos,
+- Captions for explanations,
+- Code blocks to show snippets.
+
+That way your project page is both technical and visually engaging.
