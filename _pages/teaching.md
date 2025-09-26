@@ -2,11 +2,19 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description:  Teaching assistance and course materials I’ve developed.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Teaching Experience
 
-Organize your courses by years, topics, or universities, however you like!
+### Mathematics
+
+- **Calculus II (MATH 116)**
+  - Winter 2024 — Supplemental Instruction Leader  
+  - Summer 2025 — Supplemental Instruction Leader  
+  - Fall 2025 — Supplemental Instruction Leader  
+  - Materials:  
+    - [Worksheets](/teaching)  
+    - [Additional notes](/teaching)  
