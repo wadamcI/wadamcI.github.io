@@ -444,9 +444,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-vulcan-24-25-airbrakes-controls",
-          title: 'Project Vulcan 24-25, Airbrakes Controls',
-          description: "Closed-loop airbrake control with Kalman-based state estimation, HIL/SIL validation, and flight testing.",
+          section: "News",},{id: "projects-project-vulcan-airbrakes-controls",
+          title: 'Project Vulcan, Airbrakes Controls',
+          description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{
