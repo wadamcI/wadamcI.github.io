@@ -1,15 +1,13 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching Experience
 description:  Teaching assistance and course materials I’ve developed.
 nav: true
 nav_order: 5
 ---
 
-## Teaching Experience
-
-### Mathematics
+## Mathematics
 
 - **Calculus II (MATH 116)**
   - Winter 2024 — Supplemental Instruction Leader  
