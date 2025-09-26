@@ -15,7 +15,7 @@
   contents:
     - title: B.S. in Computer Engineering
       institution: University of Michigan–Dearborn, Dearborn, MI
-      year: Sep 2022 – May 2027 (expected)
+      year: 27'
       description:
         - GPA ~3.97
 
@@ -24,7 +24,7 @@
   contents:
     - title: Research Assistant, Power Lab
       institution: University of Michigan–Dearborn
-      year: Aug 2023 – Present
+      year: Aug 2023 – Pres.
       description:
         - Built outage-analytics pipelines and interactive dashboards (PostGIS, Leaflet, Node/Express).
         - Developed a GPU/HPC workflow (SLURM) to accelerate control simulations and data processing.
@@ -33,26 +33,26 @@
 
     - title: Airbrakes Lead
       institution: Michigan Aeronautical Science Association (MASA)
-      year: Aug 2023 – Present
+      year: Aug 2023 – Pres.
       description:
         - Led closed-loop airbrake control design for IREC 2025; coordinated controls, CFD, and HIL testing.
         - Implemented Python-based flight visualization GUI; supported SAC 2024 prep and analysis.
 
     - title: Supplemental Instructor — General Chemistry & Calculus
       institution: University of Michigan–Dearborn
-      year: Jul 2024 – Present
+      year: Jul 2024 – Pres.
       description:
         - Led peer-learning sessions and authored review worksheets aligned with course outcomes.
 
     - title: Treasurer
       institution: Math Club, UM-Dearborn
-      year: Aug 2023 – Present
+      year: Aug 2023 – Pres.
       description:
         - Secured $2,000+ in funding for competitions and talks; organized weekly Putnam prep.
 
     - title: Coffee Quality Grader & Spectrophotometer Technician
       institution: Blossom Valley Coffee, Taichung, Taiwan
-      year: Jun 2019 – Jun 2022
+      year: Jun 2019
       description:
         - Calibrated Agtron spectrophotometers; conducted cupping and quality assessments.
 
@@ -60,13 +60,13 @@
   type: time_table
   contents:
     - title: NODE — Neighborhood Outage Dialogue Engine
-      year: 2024 – Present
+      year: 2024 – Pres.
       description:
         - Web app for outage–weather–socioeconomic exploration (Leaflet + PostGIS + LLM).
         - Time filtering, clustering, and report generation; built API and data pipelines.
 
     - title: Airbrakes Controls and Fault detection System
-      year: 2024 – Present
+      year: 2024 – Pres.
       description:
         - STM32/Teensy avionics with Kalman-based altitude/acceleration estimation.
         - HIL/SIL testbeds connecting sensors (IMU, barometer) to control loops.
@@ -94,7 +94,7 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2022 – Present
+    - year: 2022 – Pres.
       items:
         - Emerging Scholar 2025
         - 4th Place Lower Michigan Math Competition
