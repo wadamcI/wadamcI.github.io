@@ -2,7 +2,7 @@
 layout: page
 title: Project Vulcan 24-25, Airbrakes Controls
 description:  Closed-loop airbrake control with Kalman-based state estimation, HIL/SIL validation, and flight testing.
-img: assets/img/MASA/AB_Vulvan_photo.png
+img: assets/img/MASA/AB_Vulcan_photo.png
 importance: 1
 category: work
 related_publications: true
@@ -43,6 +43,8 @@ For Vulcan, analysis focuses on the **midcourse (coasting) phase**—the period 
   <div class="col-sm-10 mt-3">
     {% include figure.liquid path="assets/img/MASA/AB_Vulcan_SoftwareBlock.png" title="Software overview" class="img-fluid rounded z-depth-1" %}
   </div>
+
+
 </div>
 <div class="caption">Sensor → Estimator (Kalman) → Controller → Airbrake Actuator.</div>
 
