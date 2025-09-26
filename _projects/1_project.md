@@ -54,5 +54,3 @@ For Vulcan, analysis focuses on the **midcourse (coasting) phase**—the period 
 - **Tooling:** PlatformIO, MATLAB/Simulink, Python, Post-processing in Jupyter
 
 ---
-
-{% endraw %}
