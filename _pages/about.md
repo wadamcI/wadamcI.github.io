@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -27,10 +27,10 @@ latest_posts:
 ---
 
 Hi! I’m **Marcus Wada**, a Computer Engineering student at the **University of Michigan–Dearborn**.  
-I split my time between **power systems & data** (outage analytics, spatial pipelines, web dashboards) and **controls & embedded systems** (rocket avionics, HIL/SIL, state estimation).
+I split my time between **power systems & data**,  **controls & embedded systems**, and **math**.
 
 - **Power Lab (Research Assistant):** I build PostGIS pipelines and interactive tools to explore outage–weather–socioeconomic data, and prototype LLM-assisted analysis for accessibility.  
-- **MASA – Airbrakes/MARC:** I lead work on **closed-loop airbrake control** and **hardware-in-the-loop** testbeds (STM32/Teensy, IMU + barometer, Kalman filtering).  
+- **MASA – Airbrakes Electronics:** I lead work on **closed-loop airbrake control with data injection detection** and **hardware-in-the-loop** testbeds (STM32/Teensy, IMU + barometer, Kalman filtering).  
 - **Teaching:** I’m an SI leader for Calculus, designing worksheets and running problem-solving sessions.
 
 **Interests:** outage resilience · controls & estimation · aerospace systems · interactive data tools  
