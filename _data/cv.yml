@@ -15,105 +15,136 @@
   contents:
     - title: B.S. in Computer Engineering
       institution: University of Michigan–Dearborn, Dearborn, MI
-      year: 27'
+      year: Expected May 2027
       description:
-        - GPA ~3.97
+        - "GPA: 3.94 / 4.00"
+        - "Relevant coursework: Applied Linear Algebra (MATH 423); Advanced Topics in Power Systems (ECE 616, audited)"
 
-- title: Experience
+- title: Research Interests
+  type: list
+  contents:
+    - Statistical learning and predictive modeling for reliable, resilient and equitable energy infrastructure planning
+    - Optimization and control of energy systems
+    - Scalable algorithm design using high-performance computing for large-scale power system applications
+    - Real-time simulation and hardware-in-the-loop validation
+
+- title: Publications
   type: time_table
   contents:
-    - title: Research Assistant, Power Lab
-      institution: University of Michigan–Dearborn
-      year: Aug 2023 – Pres.
+    - title: "Grid integration of AI data centers: A critical review of energy storage solutions"
+      institution: Advances in Applied Energy, vol. 23, Art. no. 100291
+      year: 2026
       description:
-        - Built outage-analytics pipelines and interactive dashboards (PostGIS, Leaflet, Node/Express).
-        - Developed a GPU/HPC workflow (SLURM) to accelerate control simulations and data processing.
-        - Modeled plants and designed full-state feedback controllers for distributed energy systems.
-        - Integrated an LLM assistant to make outage data exploration more accessible.
-
-    - title: Airbrakes Lead
-      institution: Michigan Aeronautical Science Association (MASA)
-      year: Aug 2023 – Pres.
+        - S. Mohammadi, W. Wang, <b>M. C. I. Wada</b>, R. Haghighi, A. Hassan, H. Liu, A. Bhatnagar, A. Chen, and W. Su
+      linkitems:
+        - linkname: doi
+          link: https://doi.org/10.1016/j.adapen.2026.100291
+    - title: "A Stackelberg–Bayesian capacity-market game of carbon regulation and second-life battery investment under AI data-center load growth"
+      institution: 2026 North American Power Symposium (NAPS), accepted for presentation
+      year: 2026
       description:
-        - Led closed-loop airbrake control design for IREC 2025; coordinated controls, CFD, and HIL testing.
-        - Implemented Python-based flight visualization GUI; supported SAC 2024 prep and analysis.
+        - R. Haghighi, A. Hassan, S. Mohammadi, <b>M. C. I. Wada</b>, and W. Su
+      linkitems:
+        - linkname: arXiv
+          link: https://arxiv.org/abs/2608.03989
 
-    - title: Supplemental Instructor — General Chemistry & Calculus
-      institution: University of Michigan–Dearborn
-      year: Jul 2024 – Pres.
-      description:
-        - Led peer-learning sessions and authored review worksheets aligned with course outcomes.
-
-    - title: Treasurer
-      institution: Math Club, UM-Dearborn
-      year: Aug 2023 – Pres.
-      description:
-        - Secured $2,000+ in funding for competitions and talks; organized weekly Putnam prep.
-
-    - title: Coffee Quality Grader & Spectrophotometer Technician
-      institution: Blossom Valley Coffee, Taichung, Taiwan
-      year: Jun 2019
-      description:
-        - Calibrated Agtron spectrophotometers; conducted cupping and quality assessments.
-
-- title: Projects
+- title: Research Experience
   type: time_table
   contents:
-    - title: NODE — Neighborhood Outage Dialogue Engine
-      year: 2024 – Pres.
+    - title: Undergraduate Research Assistant
+      institution: University of Michigan–Dearborn, Dearborn, MI
+      department: "Advisor: Prof. Wencong Su"
+      year: Aug 2023 – Present
       description:
-        - Web app for outage–weather–socioeconomic exploration (Leaflet + PostGIS + LLM).
-        - Time filtering, clustering, and report generation; built API and data pipelines.
+        - Developed data collection and processing pipelines for utility outage records; trained LSTM-based forecasting models and integrated predictive and analytical capabilities into an LLM-assisted dashboard
+        - Designed an optimization-based converter selection tool for microgrid applications for a Toyota-sponsored project
+        - Evaluated hierarchical energy-storage architectures for AI data centers and proposed strategies for load smoothing, renewable integration, and improved grid compatibility
+        - Contributed to the formulation of a Bayesian Stackelberg–Nash model for evaluating carbon regulation, capacity-market decisions, and second-life battery investment under AI data-center load growth
 
-    - title: Airbrakes Controls and Fault detection System
-      year: 2024 – Pres.
-      description:
-        - STM32/Teensy avionics with Kalman-based altitude/acceleration estimation.
-        - HIL/SIL testbeds connecting sensors (IMU, barometer) to control loops.
-
-    - title: Flight Visualization GUI
-      year: 2024
-      description:
-        - Python GUI to visualize trajectories and flight parameters for SAC 2024 teams.
-
-- title: Skills
-  type: nested_list
+- title: Industry Experience
+  type: time_table
   contents:
-    - title: Controls & Embedded
-      items:
-        - MATLAB/Simulink, Kalman, LQR/PID, HIL/SIL
-        - STM32, Teensy, Arduino
-    - title: Software & Data
-      items:
-        - Python, C/C++, SQL, JavaScript, LaTeX
-        - PostGIS, Node/Express, Jupyter, PyCharm/VS Code
-    - title: Collaboration
-      items:
-        - Git/GitHub, technical writing, worksheets & tutoring
+    - title: Controls and Energy Systems Engineer
+      institution: GC and Mobility (Remote)
+      year: Jun 2026 – Present
+      description:
+        - Develop optimization and simulation tools for energy management at sites combining battery storage, EV charging and solar
+        - Build MATLAB/Simulink models to validate real-time control logic before hardware testing
+
+- title: Selected Engineering Projects
+  type: time_table
+  contents:
+    - title: Closed-Loop Airbrake Controller for Sounding Rockets
+      institution: Michigan Aeronautical Science Association at Dearborn (MASA-Dearborn)
+      year: Aug 2024 – Present
+      description:
+        - Led the development of the team's first successfully deployed embedded airbrake system for the International Rocket Engineering Competition
+        - Implemented and tuned Kalman- and Madgwick-filter-based state estimation, real-time apogee prediction, and closed-loop guidance algorithms
+      linkitems:
+        - linkname: Vulcan
+          link: /projects/1_project/
+        - linkname: HADES
+          link: /projects/2_hades/
+
+- title: Presentations and Posters
+  type: time_table
+  contents:
+    - title: A Comprehensive Python Package for Forecasting Power Outages
+      institution: Summer Undergraduate Research Experience (SURE) Program, University of Michigan–Dearborn
+      year: Sep 2024
+      description:
+        - <b>M. C. I. Wada</b>, W. Su, and L. Andres. Poster presented Sept. 17, 2024
+      linkitems:
+        - linkname: doi
+          link: https://doi.org/10.7302/24853
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: "MATH 116: Calculus II, Supplemental Instruction Leader"
+      institution: University of Michigan–Dearborn
+      year: W24, F25
+      description:
+        - Led collaborative problem-solving and examination-review sessions, developed instructional materials, and provided tutoring through the Mathematics Learning Center
+    - title: "CHEM 134: General Chemistry, Supplemental Instruction Leader"
+      institution: University of Michigan–Dearborn
+      year: F24
+      description:
+        - Led weekly peer-learning sessions, developed practice problems and review materials, and supported students during in-class assignments
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2022 – Pres.
+    - title: Undergraduate
       items:
-        - Emerging Scholar 2025
-        - 4th Place Lower Michigan Math Competition
-        
+        - James B. Angell Scholar, University of Michigan, 2024–2026
+        - Fourth Place, Lower Michigan Mathematics Competition, 2025
+        - Undergraduate International Scholarship, University of Michigan–Dearborn, 2023–2027
+    - title: High School
+      items:
+        - Four-Time Gold Medalist and National Finalist, Brazilian Astronomy Olympiad, 2019–2022
+        - Two-Time Gold Medalist, Brazilian National Science Olympiad, 2021–2022
+        - Honorable Mention, Brazilian Mathematics Olympiad, 2019
+        - Bronze Medal, Brazilian Economics Olympiad, 2022
 
-- title: Languages
-  type: list
+- title: Skills
+  type: map
   contents:
-    - English (Fluent), Portuguese (Fluent), Mandarin (Conversational), Spanish (Intermediate), French (Intermediate)
+    - name: Computing
+      value: Python, MATLAB/Simulink, embedded C/C++, and HPC (SLURM, MPI)
+    - name: Languages
+      value: Portuguese (native), English (fluent), Mandarin Chinese (conversational)
 
-- title: Academic Interests
-  type: nested_list
+- title: Leadership and Service
+  type: time_table
   contents:
-    - title: Power & Grid Analytics
-      items:
-        - Outage modeling, resilience, spatial data systems
-    - title: Controls & Aerospace
-      items:
-        - State estimation, guidance & actuation, HIL validation
-    - title: Data Systems
-      items:
-        - PostGIS pipelines, interactive visualization, LLM interfaces
+    - title: Treasurer, Mathematics Club
+      institution: University of Michigan–Dearborn
+      year: Aug 2023 – Present
+      description:
+        - Secured more than $2,000 in university funding and supported competitions, colloquia, workshops, and Putnam preparation activities
+    - title: Corresponding Secretary, IEEE–Eta Kappa Nu, Theta Tau Chapter
+      institution: University of Michigan–Dearborn
+      year: 2025 – 2026
+      description:
+        - Organized chapter activities and represented the chapter at the IEEE–HKN Student Leadership Conference

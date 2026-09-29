@@ -1,0 +1,186 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{multicol} 
+\setlength{\columnsep}{1cm} % Adjust space between columns
+\setlength{\parindent}{0pt} 
+\usepackage{tikz}
+\everymath{\displaystyle}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{MATH 116 \\ SI Session 3}
+\author{Sequences and Series}
+\date{} % Remove date if not needed
+
+\maketitle
+
+\begin{multicols}{2}
+\subsubsection*{Definitions}
+
+A \textbf{sequence of real numbers} is a function
+\[ f: \N \to \mathbb{R},\quad n \mapsto a_n = f(n) \]
+Represented as \((a_n)_{n \in \N} = (a_1, a_2, a_3, \cdots)\).
+
+Given a sequence \((a_n)_{n \in \N}\), its associated \textbf{series} is:
+\[ \sum_{n=1}^\infty a_n = a_1 + a_2 + a_3 + \cdots \]
+
+The \textbf{sequence of partial sums} \((S_n)\) is:
+\[
+\begin{aligned}
+S_1 &= a_1, \\
+S_2 &= a_1 + a_2, \\
+S_3 &= a_1 + a_2 + a_3, \\
+&\;\;\vdots \\
+S_n &= \sum_{k=1}^n a_k
+\end{aligned}
+\]
+
+\textbf{Series convergence} is defined as follows:
+
+\[
+\sum_{n=1}^\infty a_n = \lim_{n \to \infty} S_n
+\]
+\\
+\textbf{Necessary condition:} If $\sum_{n=1}^\infty a_n$ converges, then $\lim_{n\to\infty} a_n=0$.
+
+\begin{itemize}
+    \item \textbf{Convergent:} The series converges if there exists $s \in \mathbb{R}$ such that  
+    \[
+    \lim_{n \to \infty} S_n = s.
+    \]
+    \item \textbf{Divergent:} The series diverges if  
+    \[
+    \lim_{n \to \infty} S_n = \pm\infty \text{ or does not exist}.
+    \]
+\end{itemize}
+
+
+\columnbreak
+
+\subsubsection*{Write the  $a_n$ for the sequences}
+
+\begin{enumerate}
+    \item $ 1, 2, 3, \cdots$ Answer: $a_n = n$
+    \item $2, 4, 6, \cdots$
+    \item $1, 2, 4, 8, \cdots$
+    \item $1,1,2,3,5,8, \cdots$
+    \item $ 1,2,6,24,120,\cdots$
+    \item $1,3,6,10,15,21, \cdots$
+\end{enumerate}
+
+\subsubsection*{Rewrite as a sum}
+
+\begin{enumerate}
+    \item $1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+ \cdots$ Answer: $\sum_{n=0}^\infty\frac{1}{2^n}$
+    \item $\frac{1}{1\cdot2}+\frac{1}{2\cdot3}+\frac{1}{3\cdot4}+ \cdots$
+    \item $1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16} \cdots$
+    \item $ 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4} \cdots$
+    \item $1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4} \cdots$
+    \item $1-1+1-1+1- \cdots$
+    \item $1-2+3-4+5- \cdots$
+    \item $1+2+3+4+5+ \cdots$
+    
+\end{enumerate}
+\end{multicols}
+
+
+\pagebreak
+
+\begin{multicols}{2}
+    \subsubsection*{Properties of Series}
+    \textit{(Assume all series displayed below are convergent.)}
+
+    \begin{enumerate}
+        \item Addition:
+        \[
+        \sum_{n=1}^\infty (a_n + b_n) = \sum_{n=1}^\infty a_n + \sum_{n=1}^\infty b_n
+        \]
+        
+        \item Subtraction: 
+        \[
+        \sum_{n=1}^\infty (a_n - b_n) = \sum_{n=1}^\infty a_n - \sum_{n=1}^\infty b_n
+        \]
+        
+        \item Multiplication by a Coefficient:
+        \[
+        \sum_{n=1}^\infty (c \cdot a_n) = c \sum_{n=1}^\infty a_n, \quad  c \in \mathbb{R}.
+        \]
+    \end{enumerate}
+    
+    \subsubsection*{Compute the following sums:}
+    \begin{enumerate}
+        \item $\displaystyle \sum_{n=1}^\infty \frac{3^{n-1}-1}{6^{n-1}} $
+        \item $\displaystyle \sum_{n=1}^\infty \frac{4}{6^{n-1}} $
+    \end{enumerate}
+    \columnbreak
+    \subsubsection*{Find the formula for the partial sums}
+    \begin{enumerate}
+        \item $1+2+3+4+ \cdots +n$
+        \item $1^2+2^2+3^2+4^2+ \cdots +n^2$
+        \item $1^3+2^3+3^3+4^3+ \cdots +n^3$
+        
+    \end{enumerate}
+    \subsubsection*{Additional problems}
+    \begin{enumerate}
+        \item Find formula for general term of the sequence:
+        \[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5,5 , ...\]
+        \item  Find a formula in compact form for the general term of the sequence defined recursively by \[
+        x_n = 
+        \begin{cases}
+            x_0=1\\
+            x_{n-1} + n, & \text{if } n \text{ is odd} \\
+            x_{n-1} + n - 1, & \text{if } n \text{ is even}
+        \end{cases}
+        \]
+
+        \item Find the coefficient of terms where the exponent of $x$ is a multiple of 3 in 
+\[
+(1 + x^2 - x^3 + x^4)^{10}.
+\]
+
+        
+    \end{enumerate}
+
+
+    
+\end{multicols}
+
+
+
+
+
+\vspace{5mm}
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+
+\end{document}

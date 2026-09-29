@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>UM-Dearborn</a>· Power Lab · MASA-Dearborn
+subtitle: Computer Engineering · <a href='https://umdearborn.edu/'>University of Michigan–Dearborn</a> · Power Lab · MASA-Dearborn
 
 profile:
   align: right
@@ -12,29 +12,28 @@ profile:
     <p><strong>Lab:</strong> Tony England ELB<br/>2383 Richard Dr, 1036<br/>Dearborn, MI 48128</p>
     <p><strong>Email:</strong> <a href="mailto:wadamc@umich.edu">wadamc@umich.edu</a></p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I’m **Marcus Wada**, a Computer Engineering student at the **University of Michigan–Dearborn**.  
-I split my time between **power systems & data**,  **controls & embedded systems**, and **math**.
+Hi! I'm **Marcus Wada**, a Computer Engineering student at the **University of Michigan–Dearborn** (B.S. expected May 2027). I work at the intersection of **power systems**, **controls** and **machine learning**.
 
-- **Power Lab (Research Assistant):**  
-  I work on outage analytics, grid modeling, and resilience research. My projects include building PostGIS pipelines for outage–weather–socioeconomic data, developing GPU-cluster simulators and HPC workflows for control systems, creating synthetic distribution system datasets, and designing interactive web platforms with LLM-assisted analysis to make insights more accessible. 
-- **MASA – Airbrakes Electronics:** I lead work on **closed-loop airbrake control with data injection detection** and **hardware-in-the-loop** testbeds (STM32/Teensy, IMU + barometer, Kalman filtering).  
-- **Teaching:** I’m an SI leader for Calculus, designing worksheets and running problem-solving sessions.
+- **Power Lab, Undergraduate Research Assistant** (advisor: [Prof. Wencong Su](https://scholar.google.com/citations?user=lQmHxuEAAAAJ&hl=en)). I work on energy storage and grid integration of AI data centers, capacity-market and carbon-policy modeling, outage forecasting with LSTMs and LLM-assisted dashboards, and currently [transformer-guided phasor estimation]({{ '/projects/3_phasor/' | relative_url }}) for protective relaying.
+- **GC and Mobility, Controls & Energy Systems Engineer.** I develop optimization and simulation tools for energy management of battery storage, EV charging and solar.
+- **MASA-Dearborn, Airbrakes Lead.** I led the team's first flown airbrake system ([Vulcan]({{ '/projects/1_project/' | relative_url }}), IREC 2025) and its closed-loop, HIL-tested successor ([HADES]({{ '/projects/2_hades/' | relative_url }}), flight scheduled for October 2026).
+- **Teaching.** I'm a Supplemental Instruction leader for Calculus II and General Chemistry.
 
-**Interests:** outage resilience · controls & estimation · aerospace systems · interactive data tools  
+**Research interests:** statistical learning and predictive modeling for reliable, resilient and equitable energy infrastructure · optimization and control of energy systems · scalable HPC algorithms for large-scale power-system applications · real-time simulation and hardware-in-the-loop validation.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

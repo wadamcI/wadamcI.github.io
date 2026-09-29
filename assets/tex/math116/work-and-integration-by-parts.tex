@@ -1,0 +1,121 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{multicol} 
+\setlength{\columnsep}{1cm} % Adjust space between columns
+\setlength{\parindent}{0pt} 
+
+\everymath{\displaystyle}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{MATH 116 \\ SI Session 1}
+\author{Work and Integration by Parts}
+
+\maketitle
+
+
+\subsubsection*{I. Solve the following integrals using integration by parts.}
+
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\displaystyle \int x\cos(x) \, dx$
+    \item $\displaystyle \int x\arcsin{x} \, dx$
+    \item $\displaystyle \int \arctan{x} \, dx$
+    \item $\displaystyle \int x^n\ln{x} \, dx$
+    \item $\displaystyle \int e^x\cos(x) \, dx$
+    \item $\displaystyle \int x^n e^{x} \, dx$
+    \item $\displaystyle \int (\ln{x})^n \, dx$
+    \item $\displaystyle \int \cos{(\ln{x})} \, dx$
+    \item $\displaystyle \int x\ln\left(1+\frac{1}{x}\right) dx$
+    \item $\displaystyle \int \frac{\sqrt{x^2+1}  [\ln{(x^2+1)}-2\ln x]}{x^4} \, dx$
+    \item $\displaystyle \int \ln{(\sqrt{1-x}+\sqrt{1+x})} \, dx$
+
+
+\end{enumerate}
+\end{multicols}
+\subsubsection*{II. Solve the following work problems.}
+
+\begin{enumerate}
+    \item Suppose that 2 J of work is needed to stretch a spring from its natural length of 30 cm to a length of 42 cm.
+    
+    \begin{enumerate}
+        \item How much work is needed to stretch the spring from 35 cm
+        to 40 cm?
+        \item How far beyond its natural length will a force of 30 N keep
+        the spring stretched?
+    \end{enumerate}
+
+    \item If 6 J of work is needed to stretch a spring from 10 cm to 12 cm and another 10 J is needed to stretch it from 12 cm to 14 cm, what is the natural length of the spring?
+    
+    \item A leaky 10-kg bucket is lifted from the ground to a height of 12 m at a constant speed with a rope that weighs $0.8\ \mathrm{kg/m}$. Initially the bucket contains 36 kg of water, but the water leaks at a constant rate and finishes draining just as the bucket reaches the 12-m level. How much work is done?
+
+    \item An aquarium 2 m long, 1 m wide, and 1 m deep is full of water. Find the work needed to pump half of the water out of the aquarium. (Use the fact that the density of water is $1000\ \mathrm{kg/m^3}$.)
+
+    % \item A circular swimming pool has a diameter of 24 ft, the sides are 5 ft high, and the depth of the water is 4 ft. How much work is required to pump all of the water out over the side? (Use the fact that water weighs $62.5\ \mathrm{lbs/ft^3}$.)
+
+\end{enumerate}
+
+
+\subsubsection*{III. If You Have Time: Extra Problems}
+
+\begin{itemize}
+    \item A system consists of two springs connected in series and
+    having the stiffness coefficients $k_1$ and $k_2$. Find the minimum work
+    to be performed in order to stretch this system by $\Delta L$.
+    \item A body of mass $m$ is pushed with the initial velocity $v_0$
+    up an inclined plane set at an angle $\alpha$ to the horizontal. The friction
+    coefficient is equal to $k$. What distance will the body cover before it
+    stops and what work do the friction forces perform over this distance?
+    \item A disc of mass $m=50\ \mathrm{g}$ slides with zero initial velocity down an inclined plane set at an angle $\alpha=30^\circ$ to the horizontal. Having traversed the distance $l=50\ \mathrm{cm}$ along the horizontal plane, the disc stops. Find the work performed by the friction forces over the whole distance, assuming the friction coefficient $k=0.15$ for both the inclined and horizontal planes.
+    \item A chain of mass $m=0.80\ \mathrm{kg}$ and length $l=1.5\ \mathrm{m}$ rests on a rough-surfaced table so that one of its ends hangs over the edge. The chain starts sliding off the table by itself provided the overhanging part equals $l_1=\tfrac{1}{3}$ of the chain length. What will be the total work performed by the friction forces acting on the chain by the moment it slides completely off the table?
+
+    \item A body of mass $m$ is hauled from the Earth's surface by applying a force that varies with the height of ascent $y$ as 
+    \[
+        F(y) = 2(ay - 1)mg,
+    \]
+    where $a$ is a positive constant. Find the work performed by this force and the increment of the body's potential energy in the gravitational field of the Earth over the first half of the ascent.
+        
+    \item[\quad \textbf{a.}] Let $P(x)$ be a polynomial with real coefficients. Prove that
+    \[\int_{0}^{\infty} e^{-x}P(x) \, dx=P(0)+P'(0)+P''(0)+\cdots \]
+    
+    \item[\quad \textbf{b.}] Compute the integral
+    \[
+   \int_{0}^{\frac{\pi}{4}} \tan^{2n}x \, dx, \quad n\ge1
+    \]
+\end{itemize}
+
+\vspace{5mm}
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+
+\end{document}

@@ -7,4 +7,5 @@ repo_description_lines_max: 2
 github_repos:
   - wadamcI/dte-outages
   - wadamcI/EJ_WEB
+  - MASA-Dearborn/HADES-Airbrakes
   - wadamcI/vulcan_airbrakes_control

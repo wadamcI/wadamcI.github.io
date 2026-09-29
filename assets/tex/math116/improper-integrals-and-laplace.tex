@@ -1,0 +1,134 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{multicol}
+\usepackage{array}
+\setlength{\columnsep}{1cm} % Adjust space between columns
+\setlength{\parindent}{0pt} 
+
+\everymath{\displaystyle}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{MATH 116-04 \\ SI Session 3}
+\author{ Improper Integrals, Comparison Test, and Laplace Transforms}
+
+\maketitle
+
+\subsubsection*{I. Evaluate the integrals or prove their divergence.}
+
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\displaystyle \int_{2}^{4} \frac{1}{(x-3)^2}\, dx$
+    \item $\displaystyle \int_{0}^{2} \frac{1}{\sqrt{4-x^2}}\, dx$
+    \item $\displaystyle \int_{-\infty}^{\infty} \frac{1}{x^2+2x+5}\, dx$
+    \item $\displaystyle \int_{e^2}^{\infty} \frac{1}{x\ln^3{x}} \, dx$
+    \item $\displaystyle \int_{0}^{\infty} x\sin{x} \, dx$
+    \item $\displaystyle \int_{0}^{\infty} e^{-x}\sin{x} \, dx$
+\end{enumerate}
+\end{multicols}
+
+
+\subsubsection*{II. Test for convergence using comparison test}
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\displaystyle \int_{a}^{\infty} e^{-px}\, dx, \quad p>0$
+    \item $\displaystyle \int_{0}^{\infty} \frac{1}{1+2x^2+3x^4}\, dx$
+    \item $\displaystyle \int_{e^2}^{\infty} \frac{1}{x+\sin^2x} \, dx$
+    \item $\displaystyle \int_{1}^{\infty} \frac{\arctan{x}}{x}\, dx$
+    \item $\displaystyle \int_{2}^{\infty} \frac{\sqrt[7]{3+2x^2}}{\sqrt[5]{x^3-1}}\, dx$
+    \item $\displaystyle \int_{1}^{\infty} 1- \cos{\frac{2}{x}} \, dx$
+\end{enumerate}
+\end{multicols}
+
+\pagebreak
+
+\subsubsection*{III. Derive and fill in the table below with the Laplace Transform for each given function.
+}
+
+
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \setlength{\tabcolsep}{12pt}
+    \begin{tabular}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{6cm}|}
+        \hline
+        \textbf{Function} \(f(t)\) & \textbf{Laplace Transform} \(\mathcal{L}\{f(t)\} = F(s)\) \\
+        \hline
+        \(1\) &  \\ \hline
+        \(t\) &  \\ \hline
+        \(t^n\) &  \\ \hline
+        \(e^{at}\) &  \\ \hline
+        \(te^{at}\) &  \\ \hline
+        \(\sin(bt)\) &  \\ \hline
+        \(\cos(bt)\) &  \\ \hline
+        \(e^{at} \sin(bt)\) &  \\ \hline
+        \(e^{at} \cos(bt)\) &  \\ \hline
+        \(y\) &  \\ \hline
+        \(y'\) &  \\ \hline
+        \(y^{(n)}\) &  \\ \hline
+    \end{tabular}
+    \label{tab:laplace-transform}
+\end{table}
+
+
+
+
+\subsubsection*{IV. Rewrite the equations in terms of Laplace transforms }
+
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\displaystyle  y' = ay$
+    \item $\displaystyle  T' = -k(T-T_a)$
+    \item $\displaystyle \frac{du}{dt}= r_{in}.c_{in} - r_{out}.\frac{u(t)}{V} $ 
+    \item $\displaystyle y'' + 4y' + 4y = \cos(2t)$
+    
+
+\end{enumerate}
+\end{multicols}
+
+
+
+\subsubsection*{V. Solve Problems Using Laplace Transform}
+Rewrite problems 8-10 from worksheet 2 using Laplace Tranforms and isolate $\mathcal{L}\{f(t)\}$.
+
+
+\subsubsection*{VI. Extra Problems}
+\begin{itemize}
+    \item[\quad \textbf{a.}] Prove convergence $\displaystyle \int_{0}^{\infty} \frac{\sin{x}}{x} \, dx$
+    \item[\quad \textbf{b.}]  Compute $\displaystyle \int_{0}^{\infty} \frac{\ln x}{x^2+a^2} \, dx$ where $a$ is a positive constant.
+    \item[\quad \textbf{c.}] Give an example of a function $f: (2, \infty) \to (0, \infty)$  with the property that $\displaystyle \int_{2}^{\infty} f^p(x) dx$ is finite if and only if $p\in [2, \infty)$
+\end{itemize}
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+
+\end{document}
