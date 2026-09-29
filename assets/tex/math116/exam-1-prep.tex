@@ -1,0 +1,75 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{multicol} 
+\setlength{\columnsep}{1cm} % Adjust space between columns
+\setlength{\parindent}{0pt} 
+
+\everymath{\displaystyle}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{MATH 116 \\ SI Session 2}
+\author{Exam Prep}
+
+\maketitle
+
+\subsubsection*{I. Area}
+\begin{enumerate}
+  \item Find the area of the region enclosed by \(x=y^4\), \(y=\sqrt{2-x}\), and \(y=0\).
+  \item Find the area of the region bounded by \(y=\tan x\) and \(y=2\sin x\) on \(-\tfrac{\pi}{3}\le x\le \tfrac{\pi}{3}\).
+  \item Find the number \(b\) such that the line \(y=b\) divides the region bounded by \(y=x^2\) and \(y=4\) into two regions of equal area.
+\end{enumerate}
+
+\subsubsection*{II. Volume}
+\begin{enumerate}
+  \item The region bounded by \(y=x^2\) and \(x=y^2\) is rotated about \(y=1\). Find the volume of the resulting solid.
+  \item The region bounded by \(x=y^2\) and \(x=1-y^2\) is rotated about \(x=3\). Find the volume of the resulting solid. (setup only)
+\end{enumerate}
+
+\subsubsection*{III. Work}
+\begin{enumerate}
+  \item If \(6\,\mathrm{J}\) of work is needed to stretch a spring from \(10\ \mathrm{cm}\) to \(12\ \mathrm{cm}\) and another \(10\,\mathrm{J}\) from \(12\ \mathrm{cm}\) to \(14\ \mathrm{cm}\), find the work required to stretch the spring from \(9.5\ \mathrm{cm}\) to \(13.5\ \mathrm{cm}\).
+  \item A bucket of mass \(10\,\mathrm{kg}\) is hoisted from ground level to a platform \(12\,\mathrm{m}\) high at constant speed. The rope passes over a light pulley at the platform and has linear mass density \(0.8\,\mathrm{kg/m}\). Initially the bucket contains \(36\,\mathrm{kg}\) of water that leaks at a constant rate and is completely gone by the time the bucket reaches height \(8\,\mathrm{m}\); after that, no water remains. Compute the total work done by the lifting force.
+\end{enumerate}
+
+\subsubsection*{IV. Integration}
+\begin{multicols}{2}
+\begin{enumerate}
+   \item $\displaystyle \int x\arcsin{x} \, dx$
+  \item \(\int \frac{x^{2}}{\sqrt{x^{2}-4}}\,dx\)
+\end{enumerate}
+\end{multicols}
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+
+\end{document}
